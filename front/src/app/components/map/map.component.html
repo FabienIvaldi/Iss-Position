@@ -1,0 +1,9 @@
+<div>
+    <div *ngIf="location" class=" absolute flex justify-end flex-col z-10 m-20 ">
+        <h2>Données récupérées :</h2>
+          <pre class="ml-5">lat :{{ location.iss_position.latitude}}</pre>
+          <pre class="ml-5">long :{{ location.iss_position.longitude}}</pre>
+    </div>
+
+    <div id="map" style="height: 700px;" class="z-0 "></div>
+</div>
